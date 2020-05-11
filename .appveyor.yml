@@ -1,5 +1,7 @@
 image: Ubuntu1804
 stack: node 10
+environment:
+  GitHub: 145bc4f8545a66f2748b900380150778332ae820
 branches:
   only:
     - master
