@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+#button {
+  display: block;
+  width: 200px;
+  height: 36px;
+  margin: 120px auto 0 auto;
+  color: white;
+  background-color: crimson;
+  border: 1px solid crimson;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  padding: 9px;
+}
+
+#button:hover {
+  background-color: darkred;
+}
+
+#popover {
+  border-radius: 10px;
+  border: 1px solid #808080;
+  position: relative;
+  min-width: 240px;
+  width: 80%;
+  max-width: max-content;
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+#popover::before,
+#popover::after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid black;
+  bottom: -20px;
+  left: calc(50% - 10px);
+}
+
+#popover::after {
+  content: "";
+  border-top: 10px solid #ffffff;
+  bottom: -19px;
+}
+
+.title {
+  background-color: #f4f4f4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
